@@ -1,0 +1,132 @@
+$color:lightblack;
+$colorfond2: white;
+$colorBlocks:#65645A;
+$backgroundcolor:#F1EED6;
+
+		html{
+		font-family: "Times New Roman", serif;
+		margin: 0;
+		padding: 0;
+		background-color: $backgroundcolor;
+		color: $colorBlocks;
+		border: {
+			top: 50px solid $colorfond2;
+			bottom: 50px solid $colorfond2;
+		}
+	}
+
+	body{
+		@extend html;
+		display: flex;
+		flex-wrap: wrap;		
+		margin:30px auto;
+		font-family: "Times New Roman", serif;
+		font-size: 15px;
+		border: none;
+		justify-content: center;
+		#void {
+		   display: flex;
+			   #moi{
+				   color: $colorBlocks;
+
+				  
+			   }	   
+		}
+	}
+
+	table {text-align: justify;
+	       border-collapse: collapse;
+	       clear: right;
+	       padding: 10px 10px 10px 10px;
+	}
+
+	td {
+	padding : 10px 10px 10px 10px;}
+	tr td:first-child {
+	min-width: 70px;}
+	#a {
+	font-size: 1.25em;
+	color: $color;
+	text-align: center;
+	font-weight: bold;
+
+		border:{
+			bottom: solid $colorfond2;
+			top: solid $colorfond2;
+		}
+	}
+
+	#date {
+	background-color:$colorfond2;
+	} 
+    figure{
+		img{
+	  width: 150px;
+	  display: inline-block;
+	  max-width: 100%;
+	  height: auto;
+	  padding: 4px;
+	  line-height: 1.42857143;
+	  background-color: #fff;
+	  border: 1px solid #ddd;
+	  border-radius: 4px;
+		}
+		figcaption{
+		text-align: center;
+		color: $colorBlocks;
+		line-height: 25px;
+
+			em{
+			line-height: 25px;
+				div{
+					border-top: solid $colorfond2;
+					padding-bottom: 10px;
+				}
+				
+
+			}
+		}
+
+		}
+
+
+
+
+	#smallscreen {
+				  
+				  text-align: center;
+				  font-size: 2em;
+				  color: $color;
+				  padding-top: 40px;
+				  margin-bottom: 40px;
+				  text-align: center;
+				  display: inline;
+				  width: 100%;
+	              }
+	.display{
+		display: none;
+	}
+
+
+@media screen and (min-width: 700px){
+
+	#smallscreen {
+				  display: none;
+	              }
+
+	.display{
+		display: block;
+	}
+
+	body{
+		display: flex;
+		flex-wrap: nowrap;
+		margin: 30px auto;
+		#void {
+			   #moi{
+			   color: $colorBlocks;
+
+			   }	   
+		}
+	}
+}
